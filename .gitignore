@@ -1,0 +1,8 @@
+OctClient/bin
+OctClient/obj
+OctClient.CustomActions/bin
+OctClient.CustomActions/obj
+OctClientInstaller/Debug
+OctClientInstaller/Release
+.vs
+.vscode

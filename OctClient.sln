@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctClient", "OctClient\OctClient.csproj", "{0F862EF3-39B8-4184-975E-6FC5AFAD68F0}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OctClientInstaller", "OctClientInstaller\OctClientInstaller.vdproj", "{C1A48F07-CA89-41A5-AB46-0FD571F93757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctClient.CustomActions", "OctClient.CustomActions\OctClient.CustomActions.csproj", "{CA1719B8-B00B-4E72-90DF-718FA4BB6D7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F862EF3-39B8-4184-975E-6FC5AFAD68F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F862EF3-39B8-4184-975E-6FC5AFAD68F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F862EF3-39B8-4184-975E-6FC5AFAD68F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F862EF3-39B8-4184-975E-6FC5AFAD68F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1A48F07-CA89-41A5-AB46-0FD571F93757}.Debug|Any CPU.ActiveCfg = Debug
+		{C1A48F07-CA89-41A5-AB46-0FD571F93757}.Release|Any CPU.ActiveCfg = Release
+		{CA1719B8-B00B-4E72-90DF-718FA4BB6D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1719B8-B00B-4E72-90DF-718FA4BB6D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1719B8-B00B-4E72-90DF-718FA4BB6D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1719B8-B00B-4E72-90DF-718FA4BB6D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7280B4C0-E218-4632-8F04-678BB811C1C9}
+	EndGlobalSection
+EndGlobal

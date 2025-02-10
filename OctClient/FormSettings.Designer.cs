@@ -1,0 +1,139 @@
+﻿namespace OctClient
+{
+    partial class FormSettings
+    {
+        /// <summary>
+        /// 必要なデザイナー変数です。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 使用中のリソースをすべてクリーンアップします。
+        /// </summary>
+        /// <param name="disposing">マネージド リソースを破棄する場合は true を指定し、その他の場合は false を指定します。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows フォーム デザイナーで生成されたコード
+
+        /// <summary>
+        /// デザイナー サポートに必要なメソッドです。このメソッドの内容を
+        /// コード エディターで変更しないでください。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textIP = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnTest = new System.Windows.Forms.Button();
+            this.btnWriteTest = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnTest);
+            this.groupBox1.Controls.Add(this.textIP);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(12, 23);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(436, 63);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "配信端末の設定";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "IP Address";
+            // 
+            // textIP
+            // 
+            this.textIP.Location = new System.Drawing.Point(83, 26);
+            this.textIP.Name = "textIP";
+            this.textIP.Size = new System.Drawing.Size(143, 19);
+            this.textIP.TabIndex = 1;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnSave.Location = new System.Drawing.Point(373, 92);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 34);
+            this.btnSave.TabIndex = 1;
+            this.btnSave.Text = "保存";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(14, 92);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 34);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "閉じる";
+            this.btnClose.UseVisualStyleBackColor = true;
+            // 
+            // btnTest
+            // 
+            this.btnTest.Location = new System.Drawing.Point(260, 24);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.Size = new System.Drawing.Size(75, 23);
+            this.btnTest.TabIndex = 2;
+            this.btnTest.Text = "接続テスト";
+            this.btnTest.UseVisualStyleBackColor = true;
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
+            // 
+            // btnWriteTest
+            // 
+            this.btnWriteTest.Location = new System.Drawing.Point(199, 92);
+            this.btnWriteTest.Name = "btnWriteTest";
+            this.btnWriteTest.Size = new System.Drawing.Size(93, 34);
+            this.btnWriteTest.TabIndex = 3;
+            this.btnWriteTest.Text = "書き込みテスト";
+            this.btnWriteTest.UseVisualStyleBackColor = true;
+            this.btnWriteTest.Click += new System.EventHandler(this.btnWriteTest_Click);
+            // 
+            // FormSettings
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(475, 141);
+            this.Controls.Add(this.btnWriteTest);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.groupBox1);
+            this.Name = "FormSettings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "設定";
+            this.Load += new System.EventHandler(this.FormSettings_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnTest;
+        private System.Windows.Forms.TextBox textIP;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnWriteTest;
+    }
+}
+
