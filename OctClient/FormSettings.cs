@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.IO.Pipes;
+using System.Net;
 
 namespace OctClient
 {
@@ -22,14 +23,19 @@ namespace OctClient
 
         private void FormSettings_Load(object sender, EventArgs e)
         {
-            textIP.Text = Properties.Settings.Default.IPAddress;
+            string ip = SendPipeCommand("get_ip");
+            textIP.Text = ip;
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.IPAddress = textIP.Text;
-            Properties.Settings.Default.Save();
+            //Properties.Settings.Default.IPAddress = textIP.Text;
+            //Properties.Settings.Default.Save();
+            string result = SendPipeCommand("save " + textIP.Text);
+            MessageBox.Show("save: " + result);
         }
+
 
         /// <summary>
         /// 名前付きパイプ経由でコマンドを送信し、サービスからの応答を返すヘルパーメソッド
@@ -94,6 +100,13 @@ namespace OctClient
         private void btnTest_Click(object sender, EventArgs e)
         {
             string ipParameter = textIP.Text;
+            // IP として成立していない場合はng
+            if (!IPAddress.TryParse(ipParameter, out _))
+            {
+                MessageBox.Show("IP が不正です。");
+                return;
+            }
+
             string command = "chk_connect " + ipParameter;
             string result = SendPipeCommand(command);
             MessageBox.Show("chk_connect: " + result);
@@ -101,7 +114,11 @@ namespace OctClient
 
         private void btnWriteTest_Click(object sender, EventArgs e)
         {
+
+            string result = SendPipeCommand("get_file");
+            MessageBox.Show("get_file: " + result);
             /*書き込みテスト*/
+            /*
             // Proguramu Files / cca  にtest.txt を作成
             string targetDir = @"C:\Program Files (x86)\cca";
 
@@ -113,6 +130,7 @@ namespace OctClient
 
             string filePath = Path.Combine(targetDir, "test.txt");
             File.WriteAllText(filePath, "test");
+            */
         }
     }
 }
