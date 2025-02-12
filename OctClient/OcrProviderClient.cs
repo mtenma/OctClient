@@ -15,7 +15,7 @@ namespace OctClient
         public string Host { get; set; }
         public int Port { get; set; }
 
-        public OctProviderClient(string host = "localhost", int port = 5000)
+        public OctProviderClient(string host = "localhost", int port = 5002)
         {
             Host = host;
             Port = port;

@@ -15,32 +15,20 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_4736A5C05CFE46C18323B88EA1EBE71C"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_53BEFB54231C428FAE569A8015CA3F79"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_CD3F3465B394E1A4D9BDBACE312A7D04"
-        "OwnerKey" = "8:_D9F8635BD9C6449FB27BA6363D88A695"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_CD3F3465B394E1A4D9BDBACE312A7D04"
-        "OwnerKey" = "8:_4736A5C05CFE46C18323B88EA1EBE71C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D9F8635BD9C6449FB27BA6363D88A695"
+        "MsmKey" = "8:_76345A24D78D4B6F8C9BF0D91BD04948"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CD3F3465B394E1A4D9BDBACE312A7D04"
+        "OwnerKey" = "8:_76345A24D78D4B6F8C9BF0D91BD04948"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -52,13 +40,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4736A5C05CFE46C18323B88EA1EBE71C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D9F8635BD9C6449FB27BA6363D88A695"
+        "OwnerKey" = "8:_76345A24D78D4B6F8C9BF0D91BD04948"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -101,34 +83,6 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_93C1A023CECE46AB9D2C861DC245CD2B"
-            {
-            "Name" = "8:プライマリ出力 from OctClient.CustomActions (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_4736A5C05CFE46C18323B88EA1EBE71C"
-            "FileType" = "3:1"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:2"
-            "Identifier" = "8:_2F54F774_BCFB_4CD1_AD86_EF8E6610F7B6"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:/targetdir=\"[TARGETDIR]\\\""
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_B8EB073D2F2D44658E9962FED973225E"
-            {
-            "Name" = "8:プライマリ出力 from OctClient (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_D9F8635BD9C6449FB27BA6363D88A695"
-            "FileType" = "3:2"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_DB3F646A_5CD3_4886_BC73_38BD8AAE8A66"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:/targetdir=\"[TARGETDIR]\\\""
-            }
         }
         "DefaultFeature"
         {
@@ -230,6 +184,28 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_21C3623B4D224929A80A000BEBD2ABB5"
+                    {
+                    "Name" = "8:OctClient"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_4BE228BDBF1B47808C2BFB656DF406F0"
+                        "Folders"
+                        {
+                        }
+                    }
+                }
+            }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_BA5C1620C31346D781113D7BC0FC2209"
+            {
+            "Name" = "8:#1928"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:StartupFolder"
+                "Folders"
+                {
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_FE709B6141F54326B9ABF01DC6FBC8FF"
@@ -260,7 +236,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:OctClient"
         "ProductCode" = "8:{1DE4C247-DBAE-4AF4-BE72-42A28CACB9B5}"
-        "PackageCode" = "8:{11B99725-475C-4050-B88B-8E6659B8D636}"
+        "PackageCode" = "8:{D8526801-F830-4B02-BF9D-0858FCAF7EB4}"
         "UpgradeCode" = "8:{BD85F639-1189-46B2-A29E-526333EEE951}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -444,6 +420,34 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_0861D55AE0EC46B5AF7DEDC417BC6AA6"
+            {
+            "Name" = "8:OctClient"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_76345A24D78D4B6F8C9BF0D91BD04948"
+            "Folder" = "8:_BA5C1620C31346D781113D7BC0FC2209"
+            "WorkingFolder" = "8:_7CCF74341F7E4B41AFA5C7EE141FCC8F"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F1C6A07B6C52463EBBAD4EFAA3F70A3E"
+            {
+            "Name" = "8:OctClient（仮称）"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_76345A24D78D4B6F8C9BF0D91BD04948"
+            "Folder" = "8:_21C3623B4D224929A80A000BEBD2ABB5"
+            "WorkingFolder" = "8:_7CCF74341F7E4B41AFA5C7EE141FCC8F"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -843,35 +847,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_4736A5C05CFE46C18323B88EA1EBE71C"
-            {
-            "SourcePath" = "8:..\\OctClient.CustomActions\\obj\\Debug\\OctClient.CustomActions.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_7CCF74341F7E4B41AFA5C7EE141FCC8F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:Built"
-            "OutputProjectGuid" = "8:{CA1719B8-B00B-4E72-90DF-718FA4BB6D7A}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D9F8635BD9C6449FB27BA6363D88A695"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_76345A24D78D4B6F8C9BF0D91BD04948"
             {
             "SourcePath" = "8:..\\OctClient\\obj\\Debug\\OctClient.exe"
             "TargetName" = "8:"
