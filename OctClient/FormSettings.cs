@@ -25,6 +25,8 @@ namespace OctClient
         {
             string ip = SendPipeCommand("get_ip");
             textIP.Text = ip;
+            string folder = SendPipeCommand("get_folder");
+            txtFolderPath.Text = folder;
 
         }
 
@@ -32,8 +34,29 @@ namespace OctClient
         {
             //Properties.Settings.Default.IPAddress = textIP.Text;
             //Properties.Settings.Default.Save();
-            string result = SendPipeCommand("save " + textIP.Text);
-            MessageBox.Show("save: " + result);
+            if (textIP.Text.Trim() == "")
+            {
+                MessageBox.Show("IPが設定されていません。");
+                return;
+            }
+            if(txtFolderPath.Text.Trim() == "")
+            {
+                MessageBox.Show("保存フォルダが指定されていません");
+                return ;
+            }
+
+
+
+            string result = SendPipeCommand("save|" + textIP.Text + "|" + txtFolderPath.Text);
+            if (result == "ok")
+            {
+                MessageBox.Show("保存しました");
+            }
+            else
+            {
+                MessageBox.Show("保存に失敗しました");
+
+            }
         }
 
 
@@ -116,7 +139,15 @@ namespace OctClient
         {
 
             string result = SendPipeCommand("get_file");
-            MessageBox.Show("get_file: " + result);
+            if(result == "ok")
+            {
+                MessageBox.Show("受信しました");
+            }
+            else
+            {
+                MessageBox.Show("受信に失敗しました（" + result + "）");
+            }
+   
             /*書き込みテスト*/
             /*
             // Proguramu Files / cca  にtest.txt を作成
@@ -131,6 +162,20 @@ namespace OctClient
             string filePath = Path.Combine(targetDir, "test.txt");
             File.WriteAllText(filePath, "test");
             */
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            //画面の終了
+            this.Close();
+        }
+
+        private void btnSelectFolder_Click(object sender, EventArgs e)
+        {
+            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+                txtFolderPath.Text = folderBrowserDialog.SelectedPath;
+            }
         }
     }
 }
