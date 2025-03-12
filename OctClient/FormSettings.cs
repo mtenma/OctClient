@@ -177,6 +177,13 @@ namespace OctClient
                 txtFolderPath.Text = folderBrowserDialog.SelectedPath;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string result = SendPipeCommand("get_token");
+            textBox1.Text = result;
+
+        }
     }
 }
 
