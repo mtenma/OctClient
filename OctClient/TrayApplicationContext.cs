@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace OctClient
 {
@@ -54,6 +55,15 @@ namespace OctClient
         // ウィンドウを表示するメソッド
         private void ShowWindow()
         {
+            // 既存のウィンドウを探す
+            FormSettings existingForm = Application.OpenForms.OfType<FormSettings>().FirstOrDefault();
+            if (existingForm != null)
+            {
+                // 既存のウィンドウが見つかった場合は、それを前面に表示
+                existingForm.WindowState = FormWindowState.Normal; // 最小化されている場合は元に戻す
+                existingForm.Activate(); // ウィンドウをアクティブにして前面に表示
+                return;
+            }
             // 既にウィンドウが表示中かどうかのチェックなど、必要に応じて処理を追加してください。
             FormSettings form = new FormSettings();
             form.Show();

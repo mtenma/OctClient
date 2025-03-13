@@ -52,7 +52,7 @@
             this.groupBox1.Controls.Add(this.btnTest);
             this.groupBox1.Controls.Add(this.textIP);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 23);
+            this.groupBox1.Location = new System.Drawing.Point(14, 86);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(436, 89);
             this.groupBox1.TabIndex = 0;
@@ -115,7 +115,7 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnSave.Location = new System.Drawing.Point(373, 118);
+            this.btnSave.Location = new System.Drawing.Point(375, 181);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 34);
             this.btnSave.TabIndex = 1;
@@ -125,7 +125,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(14, 118);
+            this.btnClose.Location = new System.Drawing.Point(16, 181);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 34);
             this.btnClose.TabIndex = 2;
@@ -135,7 +135,7 @@
             // 
             // btnWriteTest
             // 
-            this.btnWriteTest.Location = new System.Drawing.Point(199, 118);
+            this.btnWriteTest.Location = new System.Drawing.Point(201, 181);
             this.btnWriteTest.Name = "btnWriteTest";
             this.btnWriteTest.Size = new System.Drawing.Size(93, 34);
             this.btnWriteTest.TabIndex = 3;
@@ -150,17 +150,18 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(388, 12);
+            this.button1.Location = new System.Drawing.Point(355, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(108, 23);
             this.button1.TabIndex = 6;
-            this.button1.Text = "getToken";
+            this.button1.Text = "Token生成テスト";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(95, -2);
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(42, 14);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(301, 19);
@@ -170,13 +171,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 165);
+            this.ClientSize = new System.Drawing.Size(475, 227);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnWriteTest);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "設定";
